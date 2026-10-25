@@ -1,1 +1,223 @@
-/* Your styles go here */
+/* Design tokens */
+:root {
+  --color-primary: #4777b6;
+  --color-menu-bg: #b7d1f3;
+  --color-text: #333333;
+  --color-muted: #adadad;
+  --color-border: #bbbbbb;
+  --color-on-primary: #ffffff;
+
+  --font-main: "Rubik", system-ui, sans-serif;
+
+  --header-height: 100px;
+  --page-padding: 32px;
+  --content-width: 610px;
+  --radius: 8px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: var(--font-main);
+  color: var(--color-text);
+  line-height: 1.25;
+}
+
+/* Header */
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: var(--header-height);
+  padding-inline: var(--page-padding);
+  background-color: var(--color-primary);
+}
+
+.site-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--color-on-primary);
+  text-decoration: none;
+}
+
+.site-nav ul {
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  list-style: none;
+}
+
+.site-nav a {
+  font-weight: 700;
+  color: var(--color-on-primary);
+  text-decoration: none;
+}
+
+.site-nav a:hover {
+  text-decoration: underline;
+}
+
+.menu-button {
+  display: none;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+/* The menu icons are dark; show them white on the blue header */
+.menu-open img {
+  filter: brightness(0) invert(1);
+}
+
+/* Main content */
+.content {
+  flex: 1;
+  width: 100%;
+  max-width: var(--content-width);
+  margin-inline: auto;
+  padding-block: 28px;
+}
+
+.content h1 {
+  margin-bottom: 8px;
+  font-size: 2.25rem;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.content p {
+  margin-bottom: 12px;
+}
+
+.content a {
+  color: var(--color-primary);
+}
+
+/* Form */
+.hello-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  margin-top: 40px;
+}
+
+.hello-form label {
+  margin-bottom: 14px;
+}
+
+.hello-form input,
+.hello-form button {
+  width: 218px;
+  max-width: 100%;
+  height: 38px;
+  border-radius: var(--radius);
+}
+
+.hello-form input {
+  padding-inline: 10px;
+  border: 2px solid var(--color-border);
+  color: var(--color-text);
+}
+
+.hello-form input:focus {
+  border-color: var(--color-primary);
+  outline: none;
+}
+
+.hello-form button {
+  border: none;
+  font-weight: 700;
+  color: var(--color-on-primary);
+  background-color: var(--color-primary);
+  cursor: pointer;
+}
+
+.hello-form button:hover {
+  filter: brightness(1.1);
+}
+
+/* Footer */
+.site-footer {
+  padding-block: 16px;
+  text-align: center;
+  color: var(--color-muted);
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  :root {
+    --page-padding: 30px;
+  }
+
+  .site-title {
+    font-size: 1.5rem;
+  }
+
+  .menu-button {
+    display: block;
+  }
+
+  /* Full-screen menu, hidden until .is-open is added by main.js */
+  .site-nav {
+    position: fixed;
+    inset: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-menu-bg);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-16px);
+    transition:
+      opacity 0.3s ease,
+      transform 0.3s ease,
+      visibility 0.3s;
+  }
+
+  .site-nav.is-open {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+  }
+
+  .menu-close {
+    position: absolute;
+    top: 36px;
+    left: var(--page-padding);
+  }
+
+  .site-nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 34px;
+  }
+
+  .site-nav a {
+    font-size: 2rem;
+    color: var(--color-text);
+  }
+
+  .content {
+    padding-inline: var(--page-padding);
+  }
+
+  .hello-form {
+    align-items: stretch;
+  }
+
+  .hello-form input,
+  .hello-form button {
+    width: 100%;
+  }
+}
+
+/* Don't animate for people who asked for reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .site-nav {
+    transition: none;
+  }
+}
