@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>צבעים · עולם החתולים</title>
+    <meta name="description" content="סוגי הפרווה של חתולי בית" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <link href="/styles/reset.css" rel="stylesheet" />
+    <link href="/styles/main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="site-title" href="index.html">🐾 עולם החתולים</a>
+
+      <button
+        class="menu-button menu-open"
+        type="button"
+        aria-label="פתיחת התפריט"
+        aria-controls="site-nav"
+        aria-expanded="false"
+      >
+        <img src="/icons/menu.svg" alt="" width="28" height="28" />
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="תפריט ראשי">
+        <button
+          class="menu-button menu-close"
+          type="button"
+          aria-label="סגירת התפריט"
+        >
+          <img src="/icons/close.svg" alt="" width="28" height="28" />
+        </button>
+        <ul>
+          <li><a href="index.html">דף הבית</a></li>
+          <li><a href="colors.html" aria-current="page">צבעים</a></li>
+          <li><a href="facts.html">עובדות</a></li>
+          <li><a href="elements.html">אלמנטים</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="content">
+      <div class="page-intro">
+        <h1>צבעים ודוגמאות</h1>
+        <p class="lead">
+          רוב החתולים בעולם הם לא בני גזע, אלא פשוט חתולי בית. מה שמבדיל ביניהם
+          הוא בעיקר הפרווה: הצבע והדוגמה. הנה שישה מהסוגים המוכרים ביותר.
+        </p>
+      </div>
+
+      <section class="cat-grid" aria-label="סוגי פרווה">
+        <article class="cat-card">
+          <img
+            src="/images/ginger.jpg"
+            alt="חתול ג'ינג'י עם חזה וכפות לבנים יושב על עלי שלכת"
+            width="600"
+            height="800"
+            loading="lazy"
+          />
+          <div class="cat-card-body">
+            <h2>ג'ינג'י</h2>
+            <p class="cat-tag">כתום, כמעט תמיד עם פסים</p>
+            <p>
+              הגן לצבע הכתום נמצא על כרומוזום X, ולכן רוב החתולים הג'ינג'ים הם
+              זכרים. כמעט לכל ג'ינג'י יש פסים או כתמים של טאבי, גם אם הם עדינים.
+            </p>
+          </div>
+        </article>
+
+        <article class="cat-card">
+          <img
+            src="/images/tuxedo.jpg"
+            alt="חתול טוקסידו שחור עם חזה וכפות לבנים שוכב על ספה"
+            width="638"
+            height="800"
+            loading="lazy"
+          />
+          <div class="cat-card-body">
+            <h2>טוקסידו</h2>
+            <p class="cat-tag">שחור ולבן</p>
+            <p>
+              פרווה שחורה עם חזה וכפות לבנים, כאילו החתול לבש חליפת ערב. זה לא
+              גזע אלא דוגמה, והיא מופיעה גם בחתולי רחוב וגם בהרבה גזעים שונים.
+            </p>
+          </div>
+        </article>
+
+        <article class="cat-card">
+          <img
+            src="/images/calico.jpg"
+            alt="חתול קליקו עם כתמים לבנים, שחורים וכתומים שוכב על כרית"
+            width="800"
+            height="799"
+            loading="lazy"
+          />
+          <div class="cat-card-body">
+            <h2>קליקו (טריקולור)</h2>
+            <p class="cat-tag">לבן, שחור וכתום</p>
+            <p>
+              כתמים גדולים של שלושה צבעים. כמעט כל חתולי הקליקו הם נקבות: כדי
+              שיהיו גם כתום וגם שחור צריך שני כרומוזומי X. זכר קליקו הוא נדיר
+              מאוד.
+            </p>
+          </div>
+        </article>
+
+        <article class="cat-card">
+          <img
+            src="/images/tortoiseshell.jpg"
+            alt="חתול טורטי בצבעי שחור וכתום מעורבבים שוכב על סדין לבן"
+            width="532"
+            height="800"
+            loading="lazy"
+          />
+          <div class="cat-card-body">
+            <h2>טורטי (שריון צב)</h2>
+            <p class="cat-tag">שחור וכתום, כמעט בלי לבן</p>
+            <p>
+              שחור וכתום מעורבבים יחד, כמו שריון של צב. גם הם כמעט תמיד נקבות,
+              מאותה סיבה כמו הקליקו. הרבה בעלים מספרים שיש להם אופי עם הרבה דעה.
+            </p>
+          </div>
+        </article>
+
+        <article class="cat-card">
+          <img
+            src="/images/black.jpg"
+            alt="חתול שחור יושב על גדר על רקע שמיים כחולים"
+            width="630"
+            height="800"
+            loading="lazy"
+          />
+          <div class="cat-card-body">
+            <h2>שחור</h2>
+            <p class="cat-tag">שחור אחיד</p>
+            <p>
+              בחלק מהמקומות חתול שחור נחשב לסימן של מזל רע, אבל ביפן ובבריטניה
+              הוא דווקא מביא מזל. באור שמש חזק אפשר לפעמים לראות אצלם פסים חלשים
+              או גוון חום־אדמדם.
+            </p>
+          </div>
+        </article>
+
+        <article class="cat-card">
+          <img
+            src="/images/white.jpg"
+            alt="חתול לבן עם עין אחת כחולה ועין אחת צהובה"
+            width="800"
+            height="674"
+            loading="lazy"
+          />
+          <div class="cat-card-body">
+            <h2>לבן</h2>
+            <p class="cat-tag">לבן אחיד</p>
+            <p>
+              חתולים לבנים עם עיניים כחולות נוטים יותר מאחרים להיוולד חירשים.
+              לחלקם יש עיניים בשני צבעים שונים (הטרוכרומיה), כמו בתמונה.
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <section class="credits">
+        <h2>קרדיטים לתמונות</h2>
+        <p>כל התמונות באתר מ־Wikimedia Commons, בהתאם לרישיונות שלהן:</p>
+        <ul>
+          <li>
+            <a
+              href="https://commons.wikimedia.org/wiki/File:Cat_November_2010-1a.jpg"
+              >טאבי (דף הבית)</a
+            >
+            · Alvesgaspar ·
+            <a href="https://creativecommons.org/licenses/by-sa/3.0/"
+              >CC BY-SA 3.0</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://commons.wikimedia.org/wiki/File:Orange_tabby_cat_sitting_on_fallen_leaves-Hisashi-01A.jpg"
+              >ג'ינג'י</a
+            >
+            · Hisashi, derivative work by Caspian blue ·
+            <a href="https://creativecommons.org/licenses/by-sa/2.0/"
+              >CC BY-SA 2.0</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://commons.wikimedia.org/wiki/File:Tuxedo_cat,_front_view.png"
+              >טוקסידו</a
+            >
+            · Ryan Schwark ·
+            <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>
+          </li>
+          <li>
+            <a href="https://commons.wikimedia.org/wiki/File:CalicoCat.jpg"
+              >קליקו</a
+            >
+            · Ellisn95 ·
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/"
+              >CC BY-SA 4.0</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://commons.wikimedia.org/wiki/File:Tortie_glam_(4164328423).jpg"
+              >טורטי</a
+            >
+            · ankakay ·
+            <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>
+          </li>
+          <li>
+            <a
+              href="https://commons.wikimedia.org/wiki/File:Blackcat-Lilith.jpg"
+              >שחור</a
+            >
+            · DrL ·
+            <a href="https://creativecommons.org/licenses/by-sa/2.5/"
+              >CC BY-SA 2.5</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://commons.wikimedia.org/wiki/File:June_odd-eyed-cat_cropped.jpg"
+              >לבן</a
+            >
+            · Keith Kissel ·
+            <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>
+          </li>
+        </ul>
+        <p>התמונות הוקטנו לשימוש באתר.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        נבנה באהבה לחתולים ·
+        <a href="https://github.com/product-jam-2027/course/"
+          >Product Jam 2027</a
+        >
+      </p>
+    </footer>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

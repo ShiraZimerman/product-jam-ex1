@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <link rel="icon" href="/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>אתר אינטרנט</title>
+    <title>עולם החתולים</title>
+    <meta name="description" content="אתר אישי שמוקדש לחתולים" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&family=Varela+Round&display=swap"
       rel="stylesheet"
     />
     <link href="/styles/reset.css" rel="stylesheet" />
@@ -16,7 +17,7 @@
   </head>
   <body>
     <header class="site-header">
-      <a class="site-title" href="index.html">אתר אינטרנט</a>
+      <a class="site-title" href="index.html">🐾 עולם החתולים</a>
 
       <button
         class="menu-button menu-open"
@@ -38,57 +39,67 @@
         </button>
         <ul>
           <li><a href="index.html" aria-current="page">דף הבית</a></li>
+          <li><a href="colors.html">צבעים</a></li>
+          <li><a href="facts.html">עובדות</a></li>
           <li><a href="elements.html">אלמנטים</a></li>
-          <li>
-            <a href="https://github.com/product-jam-2027/course/">הקורס</a>
-          </li>
         </ul>
       </nav>
     </header>
 
     <main class="content">
-      <h1>ברוכים הבאים לאתר האינטרנט שלי</h1>
-      <p>
-        האינטרנט (ב<a href="https://he.wikipedia.org/wiki/עברית">עברית</a>:
-        מִרְשֶׁתֶת) הוא
-        <a href="https://he.wikipedia.org/wiki/רשת_תקשורת_נתונים"
-          >רשת תקשורת נתונים</a
-        >
-        בהיקף כמעט כלל־עולמי שנוצרה כתוצאה מחיבורים רבים בין
-        <a href="https://he.wikipedia.org/wiki/רשת_מחשבים">רשתות מחשבים</a>
-        שאפשרו תקשורת בין מחשבים רבים ברשתות רבות.
-      </p>
-      <p>
-        התשתית הרעיונית והמחקרית של האינטרנט נמצאת בתחילת שנות ה-60 במסגרת
-        מחקרים של
-        <a
-          href="https://he.wikipedia.org/wiki/הסוכנות_לפרויקטים_מחקריים_מתקדמים_בתחום_הביטחון"
-          >הסוכנות הצבאית לפרויקטים מחקריים מתקדמים</a
-        >
-        של
-        <a href="https://he.wikipedia.org/wiki/משרד_ההגנה_של_ארצות_הברית"
-          >משרד ההגנה האמריקאי</a
-        >
-        (<a href="https://he.wikipedia.org/wiki/DARPA">ARPA</a>). תחילת פעילותו
-        של האינטרנט, כלומר הרשת המבצעית הראשונה (<a
-          href="https://he.wikipedia.org/wiki/ARPANET"
-          >ARPANET</a
-        >), החלה בסוף שנות ה-60, כאשר בשנת
-        <a href="https://he.wikipedia.org/wiki/1969">1969</a> נשלחה ההודעה
-        הראשונה בין שני מחשבים מחוברים. היקף רשת האינטרנט, כמות המידע העצומה
-        השמורה בשרתים והפעילות הרבה שמבוצעת באמצעות האינטרנט הפכו את האינטרנט
-        לגורם רב משמעות בהתפתחות הכלכלית, החברתית והתרבותית.
-      </p>
+      <section class="hero">
+        <div class="hero-text">
+          <h1>ברוכים הבאים לעולם החתולים שלי</h1>
+          <p class="lead">
+            האתר הזה הוא מכתב אהבה לחתולים: היצורים הרכים, הסקרנים והעצמאיים
+            שישנים חצי יום, מפילים דברים מהשולחן בלי שום חרטה, ובכל זאת מצליחים
+            לגרום לנו להתאהב בהם מחדש בכל פעם שהם מגרגרים.
+          </p>
+          <p>
+            כאן ריכזתי את מה שהכי מקסים בהם, בתקווה שגם אתם תצאו מכאן עם חיוך.
+          </p>
+        </div>
+        <img
+          class="hero-image"
+          src="/images/hero.jpg"
+          alt="חתול טאבי מפוספס יושב על קיר ומביט למצלמה"
+          width="599"
+          height="800"
+        />
+      </section>
 
-      <form class="hello-form">
-        <label for="name">איך קוראים לך?</label>
-        <input id="name" name="name" type="text" placeholder="שם פרטי" />
-        <button type="submit">בבקשה ללחוץ על הכפתור</button>
-      </form>
+      <section class="link-cards" aria-label="מה יש באתר">
+        <a class="link-card" href="colors.html">
+          <span class="link-card-icon" aria-hidden="true">🐈</span>
+          <h2>צבעים</h2>
+          <p>
+            ג'ינג'י, טוקסידו, קליקו ועוד: הכירו את סוגי הפרווה של חתולי הבית.
+          </p>
+        </a>
+        <a class="link-card" href="facts.html">
+          <span class="link-card-icon" aria-hidden="true">💡</span>
+          <h2>עובדות</h2>
+          <p>למה חתולים מייללים רק לבני אדם? ועוד עובדות מפתיעות.</p>
+        </a>
+      </section>
+
+      <section class="hello">
+        <h2>בואו נכיר</h2>
+        <form class="hello-form">
+          <label for="name">איך קוראים לך?</label>
+          <input id="name" name="name" type="text" placeholder="שם פרטי" />
+          <button type="submit">לקבל מיאו</button>
+        </form>
+      </section>
     </main>
 
     <footer class="site-footer">
-      <p>Product Jam 2027</p>
+      <p>
+        נבנה באהבה לחתולים ·
+        <a href="https://github.com/product-jam-2027/course/"
+          >Product Jam 2027</a
+        >
+      </p>
     </footer>
 
     <script type="module" src="/main.js"></script>
